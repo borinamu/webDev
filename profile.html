@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 문서의 문자 인코딩 방식 지정 => utf-8 -->
+    <!-- 모바일 기기에서 웹페이지가 보이는 방법을 제어. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI융합 웹개발 - Profile</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- 외부 css 파일 연결 -->
+  </head>
+  <body>
+    <main class="card-container">
+      <!-- main: 페이지의 핵심적인 콘텐츠를 감싸는 시맨틱 태그 -->
+      <header class="card-header">
+        <!-- header: 소개, 탐색 링크 등을 포함하는 시맨틱 태그 / 프로필카드의 머리말 -->
+        <img
+          class="profile-pic"
+          src="https://picsum.photos/id/237/200"
+          alt="Profile Picture"
+        />
+      </header>
+      <section class="card-body">
+        <!-- section: 문서의 구획을 나타내는 시맨틱 태그 / 프로필카드의 본문 -->
+        <h1 class="user-name">고길동</h1>
+        <p class="user-title">Full-stack Developer</p>
+        <!-- p: 단락을 나타내는 태그 -->
+        <div class="user-skils">
+          <!-- div: 구획을 나타내는 태그 -->
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+        </div>
+      </section>
+      <footer class="card-footer">
+        <!-- footer: 저작권 정보, 연락처 정보 등을 포함하는 시맨틱 태그 / 프로필카드의 바닥글 -->
+        <a href="#">Contact Me</a>
+      </footer>
+    </main>
+  </body>
+  
+</html>

@@ -1,0 +1,74 @@
+/* 기본 및 레이아웃 */
+body {
+   background: linear-gradient(to right, #b1c7f5, #483da8);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 기본 글꼴 지정 */
+  display: flex; /* 플렉스 박스 레이아웃을 이용해 자식 요소들을 정렬한다. */
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  min-height: 100vh; /* 최소 높이를 화면 전체 높이로 설정한다. */
+  margin: 0; /* body의 기본 여백을 제거한다. */
+}
+
+/* 카드 컨테이너 */
+.card-container {
+  background-color: white; /* 카드 배경색 */
+  width: 350px; /* 카드 너비 */;
+  border-radius: 20px; /* 둥근 모서리 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  overflow: hidden; /* 자식요소가 테두리를 빠져나가지 않도록 한다. */
+  text-align : center; /* 텍스트 중앙 정렬 */
+}
+
+/* 헤더 및 프로필 사진 */
+.card-header {
+  background-color: #f0f0f0; /* 헤더 배경색 */
+  padding: 40px 0; /* 상하 40px, 좌우 0px의 여백을 지정한다. */
+
+}
+
+.profile-pic {
+  width: 150px; /* 프로필 사진 너비 */
+  height: 150px; /* 프로필 사진 높이 */
+  border-radius: 50%; /* 이미지를 원형으로 만든다.*/
+  border: 5px solid black; /* 흰색 테두리 */
+}
+
+/* 카드 본문 */
+.card-body {
+  padding: 30px; /* 카드 본문 여백 */
+}
+
+.user-name {
+  margin : 10px 0 5px; /* 위 10px, 좌우 : 0px, 아래 : 5px의 바깥여백 */
+  font-size: 24px; /* 글자 크기 */
+}
+
+.user-skils span {
+  background-color: #e0e0e0; /* 스킬 배경색 */
+  border-radius: 15px;
+  padding: 5px 15px; /* 상하 5px, 좌우 15px의 여백 */
+  font-size: 12px;
+  /* display: inline-block; 인라인 요소에 여백과 크기를 적용한다. */
+}
+
+/* 푸터 및 버튼 */
+.card-footer {
+  padding: 20px; /* 카드 푸터 여백 */
+  margin: 10px;
+}
+
+.card-footer a {
+  background: linear-gradient(to right, #529cfd, #cfdef7); /* 버튼 배경 그라데이션 */
+  color : white; /* 버튼 글자색 */
+  text-decoration: none; /* 링크 밑줄 제거 */
+  border-radius: 30px; /* 둥근 모서리 */
+  font-weight: bold; /* 굵은 글씨 */
+  transition: transform 0.2s ease-in-out; /* 호버시 0.2초 동안 부드러운 애니메이션 효과 적용 */
+  padding: 12px 30px;
+ 
+}
+
+.card-footer a:hover {
+  transform: scale(1.05); /* 호버시 버튼 크기를 5% 확대 */
+}
+
