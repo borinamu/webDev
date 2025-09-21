@@ -1,6 +1,10 @@
 /* 기본 및 레이아웃 */
+/* 
+  스타일 적용 우선 순위
+  - !important > inline style > id > class/어트리뷰트/가상 선택자 > 태그선택자 > 상속된 스타일
+ */
 body {
-   background: linear-gradient(to right, #b1c7f5, #483da8);
+   background: linear-gradient(to right, skyblue, #483da8);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 기본 글꼴 지정 */
   display: flex; /* 플렉스 박스 레이아웃을 이용해 자식 요소들을 정렬한다. */
   justify-content: center; /* 가로 중앙 정렬 */
